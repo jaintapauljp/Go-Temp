@@ -8,6 +8,8 @@ import "crypto/tls"
 
 func main() {
 	config := &tls.Config{}
+	// OpenRefactory Warning:
+	// Usage of insecure protocol version in TLS configuration.
 	config.MinVersion = tls.VersionSSL30
 }
 
